@@ -47,7 +47,7 @@ object FirJavaSyntheticNamesProvider : FirSyntheticNamesProvider() {
         val identifier = name.identifier
         val prefix = when {
             identifier.startsWith(GETTER_PREFIX) -> GETTER_PREFIX
-            identifier.startsWith(IS_PREFIX) -> IS_PREFIX
+            identifier.startsWith(IS_PREFIX) -> ""
             identifier.startsWith(SETTER_PREFIX) -> SETTER_PREFIX
             else -> return null
         }

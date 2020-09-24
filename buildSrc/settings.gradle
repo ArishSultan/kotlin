@@ -24,8 +24,8 @@ buildscript {
     }
 }
 
-def buildProperties = BuildPropertiesKt.getKotlinBuildPropertiesForSettings(settings)
 def projectVersions = file("../gradle/versions.properties").text
+def buildProperties = BuildPropertiesKt.getKotlinBuildPropertiesForSettings(settings)
 
 include "prepare-deps"
 

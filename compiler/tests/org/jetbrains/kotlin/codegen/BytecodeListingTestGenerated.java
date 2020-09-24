@@ -249,9 +249,19 @@ public class BytecodeListingTestGenerated extends AbstractBytecodeListingTest {
             runTest("compiler/testData/codegen/bytecodeListing/collectionStubs/customMutableListIterator.kt");
         }
 
+        @TestMetadata("diamondInheritanceThroughJava.kt")
+        public void testDiamondInheritanceThroughJava() throws Exception {
+            runTest("compiler/testData/codegen/bytecodeListing/collectionStubs/diamondInheritanceThroughJava.kt");
+        }
+
         @TestMetadata("emptyList.kt")
         public void testEmptyList() throws Exception {
             runTest("compiler/testData/codegen/bytecodeListing/collectionStubs/emptyList.kt");
+        }
+
+        @TestMetadata("extendingAbstractCollection.kt")
+        public void testExtendingAbstractCollection() throws Exception {
+            runTest("compiler/testData/codegen/bytecodeListing/collectionStubs/extendingAbstractCollection.kt");
         }
 
         @TestMetadata("noStubsForCollection.kt")
